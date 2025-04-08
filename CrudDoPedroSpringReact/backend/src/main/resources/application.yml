@@ -1,0 +1,31 @@
+spring:
+  profiles:
+    active: test
+  jpa:
+    open-in-view: true
+  application:
+    name: libraryapi2
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+    jpa:
+      show-sql: true
+      hibernate:
+        ddl-auto: update
+      #     ddl-auto: create-drop
+      #      ddl-auto: none
+      properties:
+        hibernate:
+          format_sql: true
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        web-allow-others: true
+server:
+  port: 8080
+  address: 0.0.0.0
