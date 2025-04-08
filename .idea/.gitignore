@@ -1,3 +1,19 @@
-# Default ignored files
-/shelf/
-/workspace.xml
+# Diretórios do backend (Java/Spring Boot)
+backend/target/
+*.log
+*.class
+*.jar
+
+# Diretórios do frontend (Node/React)
+frontend/node_modules/
+frontend/build/
+frontend/.env
+
+# IDEs e ferramentas
+*.iml
+.idea/
+.vscode/
+.DS_Store
+
+# Arquivos de SO
+Thumbs.db
